@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+
+<html>
+ <head>
+  <title>VISUALISTAIONS</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <h1 align="center">EMPLOYEE HEALTH MONITOR<h1>
+ </head>
+<body>
+	<script>
+		function visualise()
+		{
+			var sel1=document.getElementById('sel1').value;
+			var sel2=document.getElementById('sel2').value;
+			var chk=document.getElementById('chkbox');
+
+			if(chk.checked==false){
+			if (sel1=='Age')
+				window.open('./Plotfiles/BoxPlotAge.py');
+			else if (sel1=='Department')
+				window.open('./Plotfiles/DepartmentPieChart.py');
+			else if (sel1=='BMI')
+				window.open('./Plotfiles/BMIBoxPlot.py');
+			else if (sel1=='Glucose')
+				window.open('./Plotfiles/BoxPlotGlucose.py');
+			else if (sel1=='BloodGroup')
+				window.open('./Plotfiles/BloodGroupPieChart.py');
+			else if (sel1=='BloodPressure')
+				window.open('./Plotfiles/BoxPlotbp.py');
+			}
+			else 
+			{
+				if (sel1=='Age'&&sel2=='Department')
+					window.open('./Plotfiles/AgeDepartment.py');
+				else if (sel1=='Department'&&sel2=='Age')
+					window.open('./Plotfiles/AgeDepartment.py');
+				else if (sel1=='Department'&&sel2=='BMI')
+					window.open('./Plotfiles/DepartmentBMI.py');
+				else if (sel1=='BMI'&&sel2=='Department')
+					window.open('./Plotfiles/DepartmentBMI.py');
+				else if (sel1=='Department'&&sel2=='Glucose')
+					window.open('./Plotfiles/DepartmentGlucose.py');
+				else if (sel1=='Glucose'&&sel2=='Department')
+					window.open('./Plotfiles/DepartmentGlucose.py');
+				else if (sel1=='Department'&&sel2=='BloodPressure')
+					window.open('./Plotfiles/DepartmentBloodPressure.py');
+				else if (sel1=='BloodPressure'&&sel2=='Department')
+					window.open('./Plotfiles/DepartmentBloodPressure.py');
+				else if (sel1=='Department'&&sel2=='BloodGroup')
+					window.open('./Plotfiles/DepartmentBloodGroup.py');
+				else if (sel1=='BloodGroup'&&sel2=='Department')
+					window.open('./Plotfiles/DepartmentBloodGroup.py');
+				else if (sel1=='Department'&&sel2=='Department')
+					window.open('Nothing.html');
+				else if (sel1=='Department'&&sel2=='Department')
+					window.open('Nothing.html');
+				else if (sel1=='Age'&&sel2=='BMI')
+					window.open('./Plotfiles/AgeBMI.py');
+				else if (sel1=='BMI'&&sel2=='Age')
+					window.open('./Plotfiles/AgeBMI.py');
+				else if (sel1=='Age'&&sel2=='BloodPressure')
+					window.open('./Plotfiles/AgeBloodPressure.py');
+				else if (sel1=='BloodPressure'&&sel2=='Age')
+					window.open('./Plotfiles/AgeBloodPressure.py');
+				else if (sel1=='Age'&&sel2=='Glucose')
+					window.open('./Plotfiles/AgeGlucose.py');
+				else if (sel1=='Glucose'&&sel2=='Age')
+					window.open('./Plotfiles/AgeGlucose.py');
+				else if (sel1=='Age'&&sel2=='BloodGroup')
+					window.open('Nothing.html');
+				else if (sel1=='BloodGroup'&&sel2=='Age')
+					window.open('Nothing.html');
+				else if (sel1=='Age'&&sel2=='Age')
+					window.open('Nothing.html');
+				else if (sel1=='Age'&&sel2=='Age')
+					window.open('Nothing.html');
+				else if (sel1=='Department'&&sel2=='Department')
+					window.open('Nothing.html');
+				else if (sel1=='Department'&&sel2=='Department')
+					window.open('Nothing.html');
+				else if (sel1=='BloodPressure'&&sel2=='BMI')
+					window.open('./Plotfiles/BMIBloodPressure.py');
+				else if (sel1=='BMI'&&sel2=='BloodPressure')
+					window.open('./Plotfiles/BMIBloodPressure.py');
+				else if (sel1=='Glucose'&&sel2=='BMI')
+					window.open('./Plotfiles/BMIGlucose.py');
+				else if (sel1=='BMI'&&sel2=='Glucose')
+					window.open('./Plotfiles/BMIGlucose.py');
+				else if (sel1=='BloodGroup'&&sel2=='BMI')
+					window.open('Nothing.html');
+				else if (sel1=='BMI'&&sel2=='BloodGroup')
+					window.open('Nothing.html');
+				else if (sel1=='BMI'&&sel2=='BMI')
+					window.open('Nothing.html');
+				else if (sel1=='BMI'&&sel2=='BMI')
+					window.open('Nothing.html');
+				else if (sel1=='BloodPressure'&&sel2=='Glucose')
+					window.open('./Plotfiles/BloodPressureGlucose.py');
+				else if (sel1=='Glucose'&&sel2=='BloodPressure')
+					window.open('./Plotfiles/BloodPressureGlucose.py');
+				else if (sel1=='BloodPressure'&&sel2=='BloodPressure')
+					window.open('Nothing.html');
+				else if (sel1=='BloodPressure'&&sel2=='BloodPressure')
+					window.open('Nothing.html');
+				else if (sel1=='BloodPressure'&&sel2=='BloodPressure')
+					window.open('Nothing.html');
+				else if (sel1=='BloodPressure'&&sel2=='BloodPressure')
+					window.open('Nothing.html');
+				else if (sel1=='BloodPressure'&&sel2=='BloodGroup')
+					window.open('Nothing.html');
+				else if (sel1=='BloodGroup'&&sel2=='BloodPressure')
+					window.open('Nothing.html');
+				else if (sel1=='Glucose'&&sel2=='Glucose')
+					window.open('Nothing.html');
+				else if (sel1=='Glucose'&&sel2=='Glucose')
+					window.open('Nothing.html');
+				else if (sel1=='Glucose'&&sel2=='BloodGroup')
+					window.open('Nothing.html');
+				else if (sel1=='BloodGroup'&&sel2=='Glucose')
+					window.open('Nothing.html');
+				else if (sel1=='BloodGroup'&&sel2=='BloodGroup')
+					window.open('Nothing.html');
+				else if (sel1=='BloodGroup'&&sel2=='BloodGroup')
+					window.open('Nothing.html');
+			}
+		}
+	
+	</script>
+	<div class="container">
+	<div class="jumbotron">
+   <form method="post" action='year.php' >
+    <div class="form-group">
+	<label for="yr">Select Year:</label>
+      <select class="form-control" id="year" name="year">
+        <option>2019</option>
+        <option>2018</option>
+        <option>2017</option>
+        <option>2016</option>
+		<option>2015</option>
+      </select>
+      <br>
+      <label for="sel1">Select the First field:</label>
+      <select class="form-control" id="sel1">
+        <option>Age</option>
+        <option>Department</option>
+        <option>BMI</option>
+        <option>Glucose</option>
+		<option>BloodGroup</option>
+		<option>BloodPressure</option>
+      </select>
+      <br>
+	  <script type="text/javascript">
+		function EnableDisableTextBox(Chk) {
+        var dropdown = document.getElementById("sel2");
+        dropdown.disabled = Chk.checked ? false : true;
+       
+		}
+		</script>
+	<label for="Chk">
+		<p style="font-size:20px">Do you want to have second field? <input type="checkbox" id="chkbox" onclick="EnableDisableTextBox(this)" /></p>
+    
+	</label>
+	<br />
+      <label for="sel2">Select the Second field:</label>
+      <select disabled="disabled" class="form-control" id="sel2">
+        <option>Age</option>
+        <option>Department</option>
+        <option>BMI</option>
+        <option>Glucose</option>
+		<option>BloodGroup</option>
+		<option>BloodPressure</option>      
+		</select>
+    </div>
+	<button type="submit" class="btn btn-info" onclick=visualise()>Submit</button>
+  </form>
+  <br/>
+  <p style="font-size:30px">TO ENTER DATA <a href='./index1.php'>CLICK HERE </a></p>
+	
+</div> 
+</div>
+</div>
+</body>
+	
